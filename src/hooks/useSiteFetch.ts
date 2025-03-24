@@ -1,4 +1,4 @@
-const baseUrl = 'http://localhost:8000/api/'
+const baseUrl = 'https://juejijiangh-lemon-live-19.deno.dev/api/'
 
 export const useSiteFetch = (id: siteId, method: LiveSiteMethod, params: QueryParams = {}) =>
   useFetch(`${baseUrl}${id}/${method}?${new URLSearchParams(params as any).toString()}`)
